@@ -1,4 +1,4 @@
-const fs = require('../helpers');
+const { fs } = require('../helpers');
 
 const getAllSpeakers = async () => {
   const data = await fs.read();

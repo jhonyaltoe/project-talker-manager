@@ -1,6 +1,12 @@
 const { read, write } = require('./fs');
+const newErrorCreator = require('./errors');
 
 module.exports = {
-  read,
-  write,
+  fs: {
+    read,
+    write,
+  },
+  errors: {
+    newErrorCreator,
+  },
 };
