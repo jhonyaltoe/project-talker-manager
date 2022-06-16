@@ -1,5 +1,6 @@
 const { readTalker, writeTalker, readLogin, writeLogin } = require('./fs');
 const newErrorCreator = require('./errors');
+const randomToken = require('./crypto');
 
 module.exports = {
   fs: {
@@ -10,5 +11,8 @@ module.exports = {
   },
   errors: {
     newErrorCreator,
+  },
+  crypto: {
+    randomToken,
   },
 };

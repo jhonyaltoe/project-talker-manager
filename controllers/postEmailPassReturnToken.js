@@ -1,10 +1,12 @@
 const services = require('../services');
+const { crypto } = require('../helpers');
 
 const postEmailPassReturnToken = async (req, res) => {
   try {
     const { email, password } = req.body;
-    const data = await services.postEmailPassReturnToken(email, password);
-    res.status(200).json(data);
+    await services.postEmailPassReturnToken(email, password);
+    const token = crypto.randomToken();
+    res.status(200).json({ token });
   } catch (err) {
     return res.status(500).json({ message: err.message });
   }
