@@ -1,9 +1,8 @@
 const express = require('express');
+const controllers = require('../controllers');
 
 const talkerRoute = express.Router({ mergeParams: true });
 
-talkerRoute.get('/', (_req, res) => {
-  res.status(200).json({ message: 'Teste' });
-});
+talkerRoute.get('/', controllers.getAllSpeakers);
 
 module.exports = talkerRoute;
