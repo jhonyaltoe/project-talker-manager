@@ -1,10 +1,12 @@
-const { read, write } = require('./fs');
+const { readTalker, writeTalker, readLogin, writeLogin } = require('./fs');
 const newErrorCreator = require('./errors');
 
 module.exports = {
   fs: {
-    read,
-    write,
+    readTalker,
+    writeTalker,
+    readLogin,
+    writeLogin,
   },
   errors: {
     newErrorCreator,

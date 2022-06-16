@@ -1,7 +1,11 @@
-const read = require('./read');
-const write = require('./write');
+const readTalker = require('./readTalker');
+const writeTalker = require('./writeTalker');
+const readLogin = require('./readLogin');
+const writeLogin = require('./writeLogin');
 
 module.exports = {
-  read,
-  write,
+  readTalker,
+  writeTalker,
+  readLogin,
+  writeLogin,
 };

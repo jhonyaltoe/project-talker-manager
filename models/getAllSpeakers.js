@@ -1,7 +1,7 @@
 const { fs } = require('../helpers');
 
 const getAllSpeakers = async () => {
-  const data = await fs.read();
+  const data = await fs.readTalker();
   return data;
 };
 

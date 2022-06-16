@@ -13,8 +13,7 @@ const getSpeakerById = async (req, res, next) => {
     
     return res.status(200).json(speaker);
   } catch (err) {
-    console.log(err);
-    // return res.status(500).json(err.message);
+    return res.status(500).json(err.message);
   }
 };
 

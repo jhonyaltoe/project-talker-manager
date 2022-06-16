@@ -1,6 +1,6 @@
 const fs = require('fs/promises');
 
-const write = async (data) => {
+const writeTalker = async (data) => {
   try {
     await fs.writeFile('talker.json', JSON.stringify(data));
   } catch (err) {
@@ -8,4 +8,4 @@ const write = async (data) => {
   }
 };
 
-module.exports = write;
+module.exports = writeTalker;
