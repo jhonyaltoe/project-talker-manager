@@ -7,4 +7,6 @@ talkerRoute.get('/', controllers.getAllSpeakers);
 
 talkerRoute.get('/:id', controllers.getSpeakerById);
 
+talkerRoute.post('/', controllers.postAddSpeaker);
+
 module.exports = talkerRoute;
