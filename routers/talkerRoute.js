@@ -8,6 +8,10 @@ talkerRoute.get('/', controllers.getAllSpeakers);
 
 talkerRoute.get('/:id', controllers.getSpeakerById);
 
-talkerRoute.post('/', middlewares.validateAddSpeaker, controllers.postAddSpeaker);
+talkerRoute.use(middlewares.tokenValidation, middlewares.validateAddSpeaker);
+
+talkerRoute.post('/', controllers.postAddSpeaker);
+
+talkerRoute.put('/:id', controllers.updateSpeaker);
 
 module.exports = talkerRoute;
