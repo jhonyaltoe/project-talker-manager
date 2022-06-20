@@ -8,7 +8,11 @@ talkerRoute.get('/', controllers.getAllSpeakers);
 
 talkerRoute.get('/:id', controllers.getSpeakerById);
 
-talkerRoute.use(middlewares.tokenValidation, middlewares.validateAddSpeaker);
+talkerRoute.use(middlewares.tokenValidation);
+
+talkerRoute.delete('/:id', controllers.deleteSpeaker);
+
+talkerRoute.use(middlewares.validateAddSpeaker);
 
 talkerRoute.post('/', controllers.postAddSpeaker);
 
