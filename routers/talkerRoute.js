@@ -6,6 +6,8 @@ const talkerRoute = express.Router({ mergeParams: true });
 
 talkerRoute.get('/', controllers.getAllSpeakers);
 
+talkerRoute.get('/search', middlewares.tokenValidation, controllers.searchSpeakers);
+
 talkerRoute.get('/:id', controllers.getSpeakerById);
 
 talkerRoute.use(middlewares.tokenValidation);

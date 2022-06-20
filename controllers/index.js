@@ -4,6 +4,7 @@ const loginAndReturnToken = require('./loginAndReturnToken');
 const postAddSpeaker = require('./postAddSpeaker');
 const updateSpeaker = require('./updateSpeaker');
 const deleteSpeaker = require('./deleteSpeaker');
+const searchSpeakers = require('./searchSpeakers');
 
 module.exports = {
   getAllSpeakers,
@@ -12,4 +13,5 @@ module.exports = {
   postAddSpeaker,
   updateSpeaker,
   deleteSpeaker,
+  searchSpeakers,
 };

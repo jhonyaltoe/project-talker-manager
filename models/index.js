@@ -5,6 +5,7 @@ const postAddSpeaker = require('./postAddSpeaker');
 const addCurrentToken = require('./addCurrentToken');
 const updateSpeaker = require('./updateSpeaker');
 const deleteSpeaker = require('./deleteSpeaker');
+const searchSpeakers = require('./searchSpeakers');
 
 module.exports = {
   getAllSpeakers,
@@ -14,4 +15,5 @@ module.exports = {
   addCurrentToken,
   updateSpeaker,
   deleteSpeaker,
+  searchSpeakers,
 };
