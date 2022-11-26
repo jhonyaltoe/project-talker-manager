@@ -1,7 +1,7 @@
 # Projeto Talker Manager
 
 ## Sobre
-Este projeto foi realizado durante meu estudo na escola [Trybe](https://www.betrybe.com/ "Home page Trybe") e tem como finalidade colocar em prática meus conhecimentos em back-end, especificamente o express e algumas ferramentas. Não existe um banco de dados e os mesmos são simulados com arquivos json.
+Este projeto teve como objetivo o aprendizado da construção de uma API e o banco de dados é representado em um arquivo JSON.
 
 ### Habilidades desenvolvidas
 
